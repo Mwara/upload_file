@@ -9,6 +9,10 @@
 
 ## prerequisite
 - update the value of the variables in the application.properties file
+- build the metadata for this property
+```bash 
+spring.datasource.path
+```
 # API to get call data record
 ## Installation
 

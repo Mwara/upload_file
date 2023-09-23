@@ -1,10 +1,19 @@
+# Restore database ussd
+```bash 
+psql -U username -c "CREATE DATABASE ussd;"
+```
+
+```bash 
+pg_restore --schema-only -U username -d ussd -f ussd.sql
+```
+
 # API in Spring Boot to load records to the database from a CDR file
 
 ## Requirements
 
 - Java 17
 - Maven 3.9
-- Postgres data base
+- Postgres data base (ussd)
 - Spring Boot
 
 ## prerequisite

@@ -46,5 +46,13 @@ echo -e "# DB connection\nDB_HOST=\"\"\nDB_PASSWORD=\"\"\nDB_NAME=\"\"\nDB_USER=
 uvicorn app.main:app --port 8000
 ```
 
-## Test
-http://127.0.0.1:8000/docs
+## Test example
+```bash
+curl --location --request GET 'http://localhost:8888/call_detail_records' \
+--header 'Content-Type: application/json' \
+--data '{
+    "record_date_start": "2023-08-18 10:00:00",
+    "record_date_end": "2023-08-18 10:34:00",
+    "msisdn":"573213437398"
+}'
+```

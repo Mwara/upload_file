@@ -48,7 +48,7 @@ uvicorn app.main:app --port 8000
 
 ## Test example
 ```bash
-curl --location --request GET 'http://localhost:8888/call_detail_records' \
+curl --location --request GET 'http://localhost:8000/call_detail_records' \
 --header 'Content-Type: application/json' \
 --data '{
     "record_date_start": "2023-08-18 10:00:00",
